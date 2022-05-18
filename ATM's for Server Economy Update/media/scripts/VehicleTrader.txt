@@ -1,0 +1,951 @@
+module AutomaticEconomyTrader {
+    imports {
+        Base
+    }
+/*****maquina para hacer los canjes******/
+	item VehicleTrader
+    {
+        Weight          = 60.0,
+        Type            = Normal,
+        DisplayName     = Dispensador Mecánico,
+        icon            = VehicleTrader,
+		StaticModel = VehicleTrader,
+		WorldStaticModel = VehicleTrader,
+		DisplayCategory	= Money,
+    }
+
+	/**************objetos intercambiables**************/
+	
+	/*Vehiculos*/
+	
+	recipe Motor Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.EngineParts,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	/* baterias */
+	recipe Bateria1 Dinero
+    {
+        destroy Money=12,
+        keep VehicleTrader,
+
+        Result:Base.CarBattery1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Bateria2 Dinero
+    {
+        destroy Money=12,
+        keep VehicleTrader,
+
+        Result:Base.CarBattery2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Bateria3 Dinero
+    {
+        destroy Money=12,
+        keep VehicleTrader,
+
+        Result:Base.CarBattery3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+
+	/*hood capo cofre*/
+	recipe Capo1 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.EngineDoor1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Capo2 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.EngineDoor2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Capo3 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.EngineDoor3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	/*tapa para maletero*/
+	recipe Maletero1 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.TrunkDoor1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Maletero2 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.TrunkDoor2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Maletero3 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.TrunkDoor3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	/*FRENOS*/
+	recipe Freno1 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.OldBrake1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Freno2 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.OldBrake2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Freno3 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.OldBrake3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Freno4 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalBrake1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Freno5 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalBrake2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Freno6 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalBrake3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Freno7 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.ModernBrake1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Freno8 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.ModernBrake2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Freno9 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.ModernBrake3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	/*PUERTAS*/
+	
+	recipe Puerta1 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.FrontCarDoor1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Puerta2 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.FrontCarDoor2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Puerta3 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.FrontCarDoor3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Puerta4 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.RearCarDoor1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Puerta5 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.RearCarDoor2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Puerta6 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.RearCarDoor3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Puerta7 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.RearCarDoorDouble1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Puerta8 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.RearCarDoorDouble2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Puerta9 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.RearCarDoorDouble3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	/*DEPOSITO GASOLINA*/
+	
+	recipe Deposito1 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.SmallGasTank1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Deposito2 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.SmallGasTank2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Deposito3 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.SmallGasTank3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Deposito4 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalGasTank1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Deposito5 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalGasTank2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Deposito6 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalGasTank3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Deposito7 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.BigGasTank1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Deposito8 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.BigGasTank2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Deposito9 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.BigGasTank3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	/*ESCAPES DE AUTO*/
+	
+	recipe Escape1 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.OldCarMuffler1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escape2 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.OldCarMuffler2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escape3 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.OldCarMuffler3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escape4 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalCarMuffler1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escape5 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalCarMuffler2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escape6 Dinero
+    {
+        destroy Money=20,
+        keep VehicleTrader,
+
+        Result:Base.NormalCarMuffler3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escape7 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.ModernCarMuffler1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escape8 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.ModernCarMuffler2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escape9 Dinero
+    {
+        destroy Money=30,
+        keep VehicleTrader,
+
+        Result:Base.ModernCarMuffler3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	/**  SUSPENSION  **/
+	
+	recipe Susp1 Dinero
+    {
+        destroy Money=5,
+        keep VehicleTrader,
+
+        Result:Base.NormalSuspension1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Susp2 Dinero
+    {
+        destroy Money=5,
+        keep VehicleTrader,
+
+        Result:Base.NormalSuspension2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Susp3 Dinero
+    {
+        destroy Money=5,
+        keep VehicleTrader,
+
+        Result:Base.NormalSuspension3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Susp4 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.ModernSuspension1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Susp5 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.ModernSuspension2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Susp6 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.ModernSuspension3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	/*ASIENTOS*/
+	
+	recipe Asiento1 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.NormalCarSeat1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Asiento2 Dinero
+    {
+        destroy Money=12,
+        keep VehicleTrader,
+
+        Result:Base.NormalCarSeat2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Asiento3 Dinero
+    {
+        destroy Money=15,
+        keep VehicleTrader,
+
+        Result:Base.NormalCarSeat3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	
+	/*LLANTAS*/
+	
+	recipe Llanta1 Dinero
+    {
+        destroy Money=5,
+        keep VehicleTrader,
+
+        Result:Base.OldTire1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Llanta2 Dinero
+    {
+        destroy Money=5,
+        keep VehicleTrader,
+
+        Result:Base.OldTire2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Llanta3 Dinero
+    {
+        destroy Money=7,
+        keep VehicleTrader,
+
+        Result:Base.OldTire3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Llanta4 Dinero
+    {
+        destroy Money=7,
+        keep VehicleTrader,
+
+        Result:Base.NormalTire1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Llanta5 Dinero
+    {
+        destroy Money=7,
+        keep VehicleTrader,
+
+        Result:Base.NormalTire2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Llanta6 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.NormalTire3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Llanta7 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.ModernTire1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Llanta8 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.ModernTire2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Llanta9 Dinero
+    {
+        destroy Money=13,
+        keep VehicleTrader,
+
+        Result:Base.ModernTire3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	/*Ventanas y Parabrisas*/
+	
+	recipe Para1 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.Windshield1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Para2 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.Windshield2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Para3 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.Windshield3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Para4 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.RearWindshield1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Para5 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.RearWindshield2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Para6 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.RearWindshield3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Ventana1 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.FrontWindow1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Ventana2 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.FrontWindow2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Ventana3 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.FrontWindow3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Ventana4 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.RearWindow1,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Ventana5 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.RearWindow2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Ventana6 Dinero
+    {
+        destroy Money=10,
+        keep VehicleTrader,
+
+        Result:Base.RearWindow3,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:10,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+}
+	

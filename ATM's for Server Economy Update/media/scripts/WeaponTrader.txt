@@ -1,0 +1,177 @@
+module AutomaticEconomyTrader {
+    imports {
+        Base
+    }
+/*****maquina para hacer los canjes******/
+	item WeaponTrader
+    {
+        Weight          = 60.0,
+        Type            = Normal,
+        DisplayName     = Dispensador de Armas,
+        icon            = WeaponTrader,
+		StaticModel = WeaponTrader,
+		WorldStaticModel = WeaponTrader,
+		DisplayCategory	= Money,
+    }
+	
+	/**************objetos intercambiables**************/
+	
+	/*Armas*/
+	
+	
+	recipe Sarten Dinero
+    {
+        destroy Money=5,
+        keep WeaponTrader,
+
+        Result:	Base.Pan,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Katana Dinero
+    {
+        destroy Money=100,
+        keep WeaponTrader,
+
+        Result: Base.Katana,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+
+	recipe Machete Dinero
+    {
+        destroy Money=65,
+        keep WeaponTrader,
+
+        Result: Machete,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Carnicero Dinero
+    {
+        destroy Money=8,
+        keep WeaponTrader,
+
+        Result: Base.MeatCleaver,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe CCaza Dinero
+    {
+        destroy Money=10,
+        keep WeaponTrader,
+
+        Result: Base.HuntingKnife,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Escopeta Dinero
+    {
+        destroy Money=30,
+        keep WeaponTrader,
+
+        Result: Base.Shotgun,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+
+	recipe Cartuchos Escopeta Dinero
+    {
+        destroy Money=20,
+        keep WeaponTrader,
+
+        Result: Base.ShotgunShellsBox,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe M16 Dinero
+    {
+        destroy Money=80,
+        keep WeaponTrader,
+
+        Result: Base.AssaultRifle,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+
+	recipe Cartucho M16 Dinero
+    {
+        destroy Money=20,
+        keep WeaponTrader,
+
+        Result: Base.556Clip,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+
+	recipe Balas M16 Dinero
+    {
+        destroy Money=42,
+        keep WeaponTrader,
+
+        Result: Base.556Box,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+
+	recipe M911 Dinero
+    {
+        destroy Money=12,
+        keep WeaponTrader,
+
+        Result: Base.Pistol2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+		recipe Cartucho M911 Dinero
+    {
+        destroy Money=5,
+        keep WeaponTrader,
+
+        Result: Base.9mmClip,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+
+	recipe Balas M911 Dinero
+    {
+        destroy Money=10,
+        keep WeaponTrader,
+
+        Result: Base.Bullets9mmBox,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+}

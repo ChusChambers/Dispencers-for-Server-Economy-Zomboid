@@ -1,0 +1,80 @@
+module AutomaticEconomyTrader {
+    imports {
+        Base
+    }
+/*****maquina para hacer los canjes******/
+	item FoodTrader
+    {
+        Weight          = 60.0,
+        Type            = Normal,
+        DisplayName     = Dispensador de Comida,
+        icon            = FoodTrader,
+		StaticModel = FoodTrader,
+		WorldStaticModel = FoodTrader,
+		DisplayCategory	= Money,
+    }
+	
+	/**************objetos intercambiables**************/
+	
+	/*Comida*/
+	
+	recipe Comida ligera por Dinero
+    {
+        destroy Money=3,
+        keep FoodTrader,
+
+        Result:	Base.CannedSardines,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Comida enlatada por Dinero
+    {
+        destroy Money=4,
+        keep FoodTrader,
+
+        Result:	Base.CannedBolognese,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Soda por Dinero
+    {
+        destroy Money=1,
+        keep FoodTrader,
+
+        Result:	Base.Pop2,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Agua por Dinero
+    {
+        destroy Money=2,
+        keep FoodTrader,
+
+        Result:	Base.WaterBottleFull,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Abrelatas por Dinero
+    {
+        destroy Money=2,
+        keep FoodTrader,
+
+        Result:	Base.TinOpener,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+}

@@ -1,0 +1,156 @@
+Recipes_EN = {
+	
+	Recipe_Comida_ligera_por_Dinero = "Light Food for Money(3)",
+	Recipe_Comida_enlatada_por_Dinero = "Canned Food for Money(4)",
+	Recipe_Soda_por_Dinero = "Soda for Money(1)",
+	Recipe_Agua_por_Dinero = "Water for Money(2)",
+	Recipe_Abrelatas_por_Dinero = "Can opener for Money(2)",
+	
+	/*Jewerly*/
+	Recipe_Centavos_por_Dinero = "Pennies(10) for Money(1)",
+	Recipe_Decimos_Relojes_y_Accesorios = "Cents(2) for Watches and Accesories",
+	Recipe_Decimos_joyas_con_Minerales = "Cents(5) for jewerly with minerals(gold,silver,gems)",
+	Recipe_Dinero_Diamantes = "Money(1) for Diamonds",
+	Recipe_Dinero_Amuletos = "Money(5)for DogTags and Lockets",
+	
+	/*Weapons*/
+	Recipe_Sarten_Dinero = "Frying Pan for Money(5)",
+	Recipe_Katana_Dinero = "Katana for Money(100)",
+	Recipe_Machete_Dinero = "Machete for Money(65)",
+	Recipe_Carnicero_Dinero = "Butcher's Knife for Money(8)",
+	Recipe_CCaza_Dinero = "Hunting Knife for Money(10)",
+	Recipe_Escopeta_Dinero = "Shotgun for Money(30)",
+	Recipe_Cartuchos_Escopeta_Dinero = "Box of Shotgun Shells for Money(20)",
+	Recipe_M16_Dinero = "M16 for Money(80)",
+	Recipe_Cartucho_M16_Dinero = "M16's Clip(Empty) for Money(20)",
+	Recipe_Balas_M16_Dinero = "Box of 5.56 Rounds (M16) for Money(42)",
+	Recipe_M911_Dinero = "Pistol (M911) for Money(12)",
+	Recipe_Cartucho_M911_Dinero = "Pistol's Clip (M911) for Money(5)",
+	Recipe_Balas_M911_Dinero = "Box of 9mm rounds(Pistol - M911) for Money(10)",
+	
+	/*Tools*/
+	
+		/*Two handed*/
+	Recipe_Hacha_por_Dinero = "Axe for Money(30)",
+	Recipe_Almadena_Dinero = "Sledgehammer for Money(50)",
+	Recipe_Palanca_Dinero = "Crowbar for Money(15)",
+	Recipe_Soplete_por_Dinero = "Blowtorch for Money(10)",
+	
+		/*Materials*/
+	Recipe_Chapa_por_Dinero = "Metal Sheet for Money(10)",
+	Recipe_Chapa_small_por_Dinero = "Small Metal Sheet for Money(10)",
+	
+		/*Several Tools*/
+	Recipe_Gato_por_Dinero = "Jack for Money(5)",
+	Recipe_TirePump_por_Dinero = "Tire Pump for Money(5)",
+	Recipe_LlaveCruz_por_Dinero = "Wrench for Money(5)",
+	Recipe_LlaveTubos_por_Dinero = "PipeWrench for Money(10)",
+	Recipe_BatteryCharger_Dinero = "Battery Charger for Money(10)",
+	Recipe_Propano_Dinero = "Propane Tank for Money(15)",
+	Recipe_Weldingmask_por_Dinero = "Welding Mask for Money(10)",
+	Recipe_GasFull_por_Dinero = "Full Petrol Can for Money(20)",
+	
+	/*Mechanic*/
+	
+		/*Motor*/
+	Recipe_Motor_Dinero = "Engine Parts for Money(10)",
+	
+		/*Battery*/
+	Recipe_Bateria1_Dinero = "Car Battery (Standard) for Money(12)",
+	Recipe_Bateria2_Dinero = "Car Battery (Heavy-Duty) for Money(12)",
+	Recipe_Bateria3_Dinero = "Car Battery (Sport) for Money(12)",
+	
+		/*Hood*/
+	Recipe_Capo1_Dinero = "Hood (Standard) for Money(15)",
+	Recipe_Capo2_Dinero = "Hood (Heavy-Duty) for Money(15)",
+	Recipe_Capo3_Dinero = "Hood (Sport) for Money(15)",
+	
+		/*Trunk Lid*/
+	Recipe_Maletero1_Dinero = "Trunk Lid (Standard) for Money(15)",
+	Recipe_Maletero2_Dinero = "Trunk Lid (Heavy-Duty) for Money(15)",
+	Recipe_Maletero3_Dinero = "Trunk Lid (Sport) for Money(15)",
+	
+		/*Brakes*/
+	Recipe_Freno1_Dinero ="Old (Standard) Brake for Money(10)",
+	Recipe_Freno2_Dinero ="Old (Heavy-Duty) Brake for Money(10)",
+	Recipe_Freno3_Dinero ="Old (Sport) Brake for Money(10)",
+	Recipe_Freno4_Dinero ="Regular (Standard) Brake for Money(20)",
+	Recipe_Freno5_Dinero ="Regular (Heavy-Duty) Brake for Money(20)",
+	Recipe_Freno6_Dinero ="Regular (Sport) Brake for Money(20)",
+	Recipe_Freno7_Dinero ="Performance Brake (Standard) for Money(30)",
+	Recipe_Freno8_Dinero ="Performance Brake (Heavy-Duty) for Money(30)",
+	Recipe_Freno9_Dinero ="Performance Brake (Sport) for Money(30)",
+	
+		/*Doors*/
+	Recipe_Puerta1_Dinero ="Front Door (Standard) for Money(15)",
+	Recipe_Puerta2_Dinero ="Front Door (Heavy-Duty) for Money(15)",
+	Recipe_Puerta3_Dinero ="Front Door (Sport) for Money(15)",
+	Recipe_Puerta4_Dinero ="Rear Door (Standard) for Money(15)",
+	Recipe_Puerta5_Dinero ="Rear Door (Heavy-Duty) for Money(15)",
+	Recipe_Puerta6_Dinero ="Rear Door (Sport) for Money(15)",
+	Recipe_Puerta7_Dinero ="Double Rear Door (Standard) for Money(20)",
+	Recipe_Puerta8_Dinero ="Double Rear Door (Heavy-Duty) for Money(20)",
+	Recipe_Puerta9_Dinero ="Double Rear Door (Sport) for Money(20)",
+	
+		/*Gas Tank*/
+	Recipe_Deposito1_Dinero ="Small Gas Tank (Standard) for Money(10)",
+	Recipe_Deposito2_Dinero ="Small Gas Tank (Heavy-Duty) for Money(10)",
+	Recipe_Deposito3_Dinero ="Small Gas Tank (Sport) for Money(10)",
+	Recipe_Deposito4_Dinero ="Medium Gas Tank (Standard) for Money(20)",
+	Recipe_Deposito5_Dinero ="Medium Gas Tank (Heavy-Duty) for Money(20)",
+	Recipe_Deposito6_Dinero ="Medium Gas Tank (Sport) for Money(20)",
+	Recipe_Deposito7_Dinero ="Big Gas Tank (Standard) for Money(30)",
+	Recipe_Deposito8_Dinero ="Big Gas Tank (Heavy-Duty) for Money(30)",
+	Recipe_Deposito9_Dinero ="Big Gas Tank (Sport) for Money(30)",
+	
+		/*Muffler*/
+	Recipe_Escape1_Dinero ="Old Muffler (Standard) for Money(10)",
+	Recipe_Escape2_Dinero ="Old Muffler (Heavy-Duty) for Money(10)",
+	Recipe_Escape3_Dinero ="Old Muffler (Sport) for Money(10)",
+	Recipe_Escape4_Dinero ="Regular Muffler (Standard) for Money(20)",
+	Recipe_Escape5_Dinero ="Regular Muffler (Heavy-Duty) for Money(20)",
+	Recipe_Escape6_Dinero ="Regular Muffler (Sport) for Money(20)",
+	Recipe_Escape7_Dinero ="Performance Muffler (Standard) for Money(30)",
+	Recipe_Escape8_Dinero ="Performance Muffler (Heavy-Duty) for Money(30)",
+	Recipe_Escape9_Dinero ="Performance Muffler (Sport) for Money(30)",
+	
+		/*Suspension*/
+	Recipe_Susp1_Dinero ="Regular Suspension (Standard) for Money(5)",
+	Recipe_Susp2_Dinero ="Regular Suspension (Heavy-Duty) for Money(5)",
+	Recipe_Susp3_Dinero ="Regular Suspension (Sport) for Money(5)",
+	Recipe_Susp4_Dinero ="Performance Suspension (Standard) for Money(10)",
+	Recipe_Susp5_Dinero ="Performance Suspension (Heavy-Duty) for Money(10)",
+	Recipe_Susp6_Dinero ="Performance Suspension (Sport) for Money(10)",
+	
+		/*Seats*/
+	Recipe_Asiento1_Dinero ="Standard Seat (Standard) for Money(10)",
+	Recipe_Asiento2_Dinero ="Standard Seat (Heavy-Duty) for Money(12)",
+	Recipe_Asiento3_Dinero ="Standard Seat (Sport) for Money(15)",
+	
+		/*Tire*/
+	Recipe_Llanta1_Dinero ="Old Tire (Standard) for Money(5)",
+	Recipe_Llanta2_Dinero ="Old Tire (Heavy-Duty) for Money(5)",
+	Recipe_Llanta3_Dinero ="Old Tire (Sport) for Money(7)",
+	Recipe_Llanta4_Dinero ="Regular Tire (Standard) for Money(7)",
+	Recipe_Llanta5_Dinero ="Regular Tire (Heavy-Duty) for Money(7)",
+	Recipe_Llanta6_Dinero ="Regular Tire (Sport) for Money(10)",
+	Recipe_Llanta7_Dinero ="Performance Tire (Standard) for Money(10)",
+	Recipe_Llanta8_Dinero ="Performance Tire (Heavy-Duty) for Money(10)",
+	Recipe_Llanta9_Dinero ="Performance Tire (Sport) for Money(13)",
+	
+		/*Windows and Windshields*/
+	Recipe_Para1_Dinero ="Windshield (Standard) for Money(10)",
+	Recipe_Para2_Dinero ="Windshield (Heavy-Duty) for Money(10)",
+	Recipe_Para3_Dinero ="Windshield (Sport) for Money(10)",
+	Recipe_Para4_Dinero ="Rear Windshield (Standard) for Money(10)",
+	Recipe_Para5_Dinero ="Rear Windshield (Heavy-Duty) for Money(10)",
+	Recipe_Para6_Dinero ="Rear Windshield (Sport) for Money(10)",
+	
+	Recipe_Ventana1_Dinero ="Front Window (Standard) for Money(10)",
+	Recipe_Ventana2_Dinero ="Front Window (Heavy-Duty) for Money(10)",
+	Recipe_Ventana3_Dinero ="Front Window (Sport) for Money(10)",
+	
+	Recipe_Ventana4_Dinero ="Rear Window (Standard) for Money(10)",
+	Recipe_Ventana5_Dinero ="Rear Window (Heavy-Duty) for Money(10)",
+	Recipe_Ventana6_Dinero ="Rear Window (Sport) for Money(10)",
+	}

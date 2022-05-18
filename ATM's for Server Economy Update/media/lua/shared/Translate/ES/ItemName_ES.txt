@@ -1,0 +1,8 @@
+ItemName_ES = {
+	ItemName_AutomaticEconomyTrader.MoneyDispencer = "ATM - Dispensador de Dinero"
+	ItemName_AutomaticEconomyTrader.VehicleTrader = "Dispensador Mecanico"
+	ItemName_AutomaticEconomyTrader.ToolTrader = "Dispensador de Herramientas"
+	ItemName_AutomaticEconomyTrader.FoodTrader = "Dispensador de Comida"
+	ItemName_AutomaticEconomyTrader.WeaponTrader = "Dispensador de Armas"
+	ItemName_AutomaticEconomyTrader.Centavo = "Centavo"
+	}

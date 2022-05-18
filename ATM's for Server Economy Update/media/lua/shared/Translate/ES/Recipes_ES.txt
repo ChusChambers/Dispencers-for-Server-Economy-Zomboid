@@ -1,0 +1,156 @@
+Recipes_ES = {
+	/*Comida*/
+	Recipe_Comida_ligera_por_Dinero = "Comida ligera(1) por Dinero(3)",
+	Recipe_Comida_enlatada_por_Dinero = "Comida enlatada(1) por Dinero(4)",
+	Recipe_Soda_por_Dinero = "Soda(1) por Dinero(1)",
+	Recipe_Agua_por_Dinero = "Agua(1) por Dinero(2)",
+	Recipe_Abrelatas_por_Dinero = "Abrelatas(1) por Dinero(2)",
+	
+	/*Joyas*/
+	Recipe_Centavos_por_Dinero = "Centavos(10) por Dinero(1)",
+	Recipe_Decimos_Relojes_y_Accesorios = "Decimos(2) a cambio de Relojes y Accesorios",
+	Recipe_Decimos_joyas_con_Minerales = "Decimos(5) a cambio de joyas con Minerales(oro,plata,gemas)",
+	Recipe_Dinero_Diamantes = "Dinero(1) a cambio de Diamantes",
+	Recipe_Dinero_Amuletos = "Dinero(5) a cambio de Amuletos y Tags",
+	
+	/*Armas*/
+	Recipe_Sarten_Dinero = "Sarten(1) por Dinero(5)",
+	Recipe_Katana_Dinero = "Katana(1) por Dinero(100)",
+	Recipe_Machete_Dinero = "Machete(1) por Dinero(65)",
+	Recipe_Carnicero_Dinero = "Cuchillo de carnicero(1) por Dinero(8)",
+	Recipe_CCaza_Dinero = "Cuchillo de caza(1) por Dinero(10)",
+	Recipe_Escopeta_Dinero = "Escopeta(1) por Dinero(30)",
+	Recipe_Cartuchos_Escopeta_Dinero = "Cartucho de balas de Escopeta(1) por Dinero(20)",
+	Recipe_M16_Dinero = "M16(1) por Dinero(80)",
+	Recipe_Cartucho_M16_Dinero = "Cartucho de M16(1) por Dinero(20)",
+	Recipe_Balas_M16_Dinero = "Caja de balas de M16(1) por Dinero(42)",
+	Recipe_M911_Dinero = "M911(1) por Dinero(12)",
+	Recipe_Cartucho_M911_Dinero = "Cartucho para M911(1) por Dinero(5)",
+	Recipe_Balas_M911_Dinero = "Caja de balas de M911(1) por Dinero(10)",
+	
+	/*Herramientas*/
+	
+		/*A dos manos*/
+	Recipe_Hacha_por_Dinero = "Hacha(1) por Dinero(30)",
+	Recipe_Almadena_Dinero = "Almadena(1) por Dinero(50)",
+	Recipe_Palanca_Dinero = "Palanca(1) por Dinero(15)",
+	Recipe_Soplete_por_Dinero = "Soplete(1) por Dinero(10)",
+	
+		/*Materiales*/
+	Recipe_Chapa_por_Dinero = "Chapa metalica(1) por Dinero(10)",
+	Recipe_Chapa_small_por_Dinero = "Chapa metalica(1) por Dinero(10)",
+	
+		/*Herramientas varias*/
+	Recipe_Gato_por_Dinero = "Gato(1) por Dinero(5)",
+	Recipe_TirePump_por_Dinero = "Inflador de neumaticos(1) por Dinero(5)",
+	Recipe_LlaveCruz_por_Dinero = "Llave de Cruz(1) por Dinero(5)",
+	Recipe_LlaveTubos_por_Dinero = "Llave de Tubos(1) por Dinero(10)",
+	Recipe_BatteryCharger_Dinero = "Cargador de Baterias por Dinero(10)",
+	Recipe_Propano_Dinero = "Tanque de Propano(1) por Dinero(15)",
+	Recipe_Weldingmask_por_Dinero = "Mascara de soldador(1) por Dinero(10)",
+	Recipe_GasFull_por_Dinero = "Bidon de Gasolina Lleno(1) por Dinero(20)",
+	
+	/*Mecanico*/
+	
+		/*Motor*/
+	Recipe_Motor_Dinero = "Pieza de Motor(1) por Dinero(10)",
+	
+		/*Baterías*/
+	Recipe_Bateria1_Dinero = "Bateria Estandar por Dinero(12)",
+	Recipe_Bateria2_Dinero = "Bateria Industrial por Dinero(12)",
+	Recipe_Bateria3_Dinero = "Bateria Deportivo por Dinero(12)",
+	
+		/*Capós*/
+	Recipe_Capo1_Dinero = "Cofre(Capo) Estandar por Dinero(15)",
+	Recipe_Capo2_Dinero = "Cofre(Capo) Industrial por Dinero(15)",
+	Recipe_Capo3_Dinero = "Cofre(Capo) Deportivo por Dinero(15)",
+	
+		/*Maleteros*/
+	Recipe_Maletero1_Dinero = "Tapa(maletero) Estandar por Dinero(15)",
+	Recipe_Maletero2_Dinero = "Tapa(maletero) Industrial por Dinero(15)",
+	Recipe_Maletero3_Dinero = "Tapa(maletero) Deportivo por Dinero(15)",
+	
+		/*Frenos*/
+	Recipe_Freno1_Dinero ="Freno Viejo Estandar por Dinero(10)",
+	Recipe_Freno2_Dinero ="Freno Viejo Industrial por Dinero(10)",
+	Recipe_Freno3_Dinero ="Freno Viejo Deportivo por Dinero(10)",
+	Recipe_Freno4_Dinero ="Freno Normal Estandar por Dinero(20)",
+	Recipe_Freno5_Dinero ="Freno Normal Industrial por Dinero(20)",
+	Recipe_Freno6_Dinero ="Freno Normal Deportivo por Dinero(20)",
+	Recipe_Freno7_Dinero ="Freno Deportivo Estandar por Dinero(30)",
+	Recipe_Freno8_Dinero ="Freno Deportivo Industrial por Dinero(30)",
+	Recipe_Freno9_Dinero ="Freno Deportivo Deportivo por Dinero(30)",
+	
+		/*PUERTAS*/
+	Recipe_Puerta1_Dinero ="Puerta Delantera Estandar por Dinero(15)",
+	Recipe_Puerta2_Dinero ="Puerta Delantera Industrial por Dinero(15)",
+	Recipe_Puerta3_Dinero ="Puerta Delantera Deportivo por Dinero(15)",
+	Recipe_Puerta4_Dinero ="Puerta Trasera Estandar por Dinero(15)",
+	Recipe_Puerta5_Dinero ="Puerta Trasera Industrial por Dinero(15)",
+	Recipe_Puerta6_Dinero ="Puerta Trasera Deportivo por Dinero(15)",
+	Recipe_Puerta7_Dinero ="Puerta Tasera Doble Estandar por Dinero(20)",
+	Recipe_Puerta8_Dinero ="Puerta Tasera Doble Industrial por Dinero(20)",
+	Recipe_Puerta9_Dinero ="Puerta Tasera Doble Deportivo por Dinero(20)",
+	
+		/*DEPOSITO GASOLINA*/
+	Recipe_Deposito1_Dinero ="Deposito Gasolina Chico Estandar por Dinero(10)",
+	Recipe_Deposito2_Dinero ="Deposito Gasolina Chico Industrial por Dinero(10)",
+	Recipe_Deposito3_Dinero ="Deposito Gasolina Chico Deportivo por Dinero(10)",
+	Recipe_Deposito4_Dinero ="Deposito Gasolina Estandar Estandar por Dinero(20)",
+	Recipe_Deposito5_Dinero ="Deposito Gasolina Estandar Industrial por Dinero(20)",
+	Recipe_Deposito6_Dinero ="Deposito Gasolina Estandar Deportivo por Dinero(20)",
+	Recipe_Deposito7_Dinero ="Deposito Gasolina Grande Estandar por Dinero(30)",
+	Recipe_Deposito8_Dinero ="Deposito Gasolina Grande Industrial por Dinero(30)",
+	Recipe_Deposito9_Dinero ="Deposito Gasolina Grande Deportivo por Dinero(30)",
+	
+		/*ESCAPES DE AUTO*/
+	Recipe_Escape1_Dinero ="Escape Viejo Estandar por Dinero(10)",
+	Recipe_Escape2_Dinero ="Escape Viejo Industrial por Dinero(10)",
+	Recipe_Escape3_Dinero ="Escape Viejo Deportivo por Dinero(10)",
+	Recipe_Escape4_Dinero ="Escape Normal Estandar por Dinero(20)",
+	Recipe_Escape5_Dinero ="Escape Normal Industrial por Dinero(20)",
+	Recipe_Escape6_Dinero ="Escape Normal Deportivo por Dinero(20)",
+	Recipe_Escape7_Dinero ="Escape Deportivo Estandar por Dinero(30)",
+	Recipe_Escape8_Dinero ="Escape Deportivo Industrial por Dinero(30)",
+	Recipe_Escape9_Dinero ="Escape Deportivo Deportivo por Dinero(30)",
+	
+		/**  SUSPENSION  **/
+	Recipe_Susp1_Dinero ="Suspencion Regular Estandar por Dinero(5)",
+	Recipe_Susp2_Dinero ="Suspencion Regular Industrial por Dinero(5)",
+	Recipe_Susp3_Dinero ="Suspencion Regular Deportivo por Dinero(5)",
+	Recipe_Susp4_Dinero ="Suspencion Deportiva Estandar por Dinero(10)",
+	Recipe_Susp5_Dinero ="Suspencion Deportiva Industrial por Dinero(10)",
+	Recipe_Susp6_Dinero ="Suspencion Deportiva Deportivo por Dinero(10)",
+	
+		/*ASIENTOS*/
+	Recipe_Asiento1_Dinero ="Asiento Normal Estandar por Dinero(10)",
+	Recipe_Asiento2_Dinero ="Asiento Normal Industrial por Dinero(12)",
+	Recipe_Asiento3_Dinero ="Asiento Normal Deportivo por Dinero(15)",
+	
+		/*LLANTAS*/
+	Recipe_Llanta1_Dinero ="Llanta vieja Estandar por Dinero(5)",
+	Recipe_Llanta2_Dinero ="Llanta vieja Industrial por Dinero(5)",
+	Recipe_Llanta3_Dinero ="Llanta vieja Deportivo por Dinero(7)",
+	Recipe_Llanta4_Dinero ="Llanta Regular Estandar por Dinero(7)",
+	Recipe_Llanta5_Dinero ="Llanta Regular Industrial por Dinero(7)",
+	Recipe_Llanta6_Dinero ="Llanta Regular Deportivo por Dinero(10)",
+	Recipe_Llanta7_Dinero ="Llanta Deportiva Estandar por Dinero(10)",
+	Recipe_Llanta8_Dinero ="Llanta Deportiva Industrial por Dinero(10)",
+	Recipe_Llanta9_Dinero ="Llanta Deportiva Deportivo por Dinero(13)",
+	
+		/*Ventanas y Parabrisas*/
+	Recipe_Para1_Dinero ="Parabrisas Frontal Estandar por Dinero(10)",
+	Recipe_Para2_Dinero ="Parabrisas Frontal Industrial por Dinero(10)",
+	Recipe_Para3_Dinero ="Parabrisas Frontal Deportivo por Dinero(10)",
+	Recipe_Para4_Dinero ="Parabrisas Trasero Estandar por Dinero(10)",
+	Recipe_Para5_Dinero ="Parabrisas Trasero Industrial por Dinero(10)",
+	Recipe_Para6_Dinero ="Parabrisas Trasero Deportivo por Dinero(10)",
+	
+	Recipe_Ventana1_Dinero ="Ventana Delantera Estandar por Dinero(10)",
+	Recipe_Ventana2_Dinero ="Ventana Delantera Industrial por Dinero(10)",
+	Recipe_Ventana3_Dinero ="Ventana Delantera Deportivo por Dinero(10)",
+	
+	Recipe_Ventana4_Dinero ="Ventana Trasera Estandar por Dinero(10)",
+	Recipe_Ventana5_Dinero ="Ventana Trasera Industrial por Dinero(10)",
+	Recipe_Ventana6_Dinero ="Ventana Trasera Deportivo por Dinero(10)",
+	}

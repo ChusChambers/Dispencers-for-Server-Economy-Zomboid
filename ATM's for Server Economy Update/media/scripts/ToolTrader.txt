@@ -1,0 +1,190 @@
+module AutomaticEconomyTrader {
+    imports {
+        Base
+    }
+/*****maquina para hacer los canjes******/
+	item ToolTrader
+    {
+        Weight          = 60.0,
+        Type            = Normal,
+        DisplayName     = Dispensador de Herramientas,
+        icon            = ToolTrader,
+		StaticModel = ToolTrader,
+		WorldStaticModel = ToolTrader,
+		DisplayCategory	= Money,
+    }
+	
+	/**************objetos intercambiables**************/
+	
+	/*Armas*/
+	
+	recipe Hacha por Dinero
+    {
+        destroy Money=30,
+        keep ToolTrader,
+
+        Result:	Base.Axe,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Chapa por Dinero
+    {
+        destroy Money=10,
+        keep ToolTrader,
+
+        Result:	Base.SheetMetal,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Chapa small por Dinero
+    {
+        destroy Money=5,
+        keep ToolTrader,
+
+        Result:	Base.SmallSheetMetal,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Soplete por Dinero
+    {
+        destroy Money=10,
+        keep ToolTrader,
+
+        Result:	Base.BlowTorch,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Weldingmask por Dinero
+    {
+        destroy Money=10,
+        keep ToolTrader,
+
+        Result:	Base.WeldingMask,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe GasFull por Dinero
+    {
+        destroy Money=20,
+        keep ToolTrader,
+
+        Result:	Base.PetrolCan,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Gato por Dinero
+    {
+        destroy Money=5,
+        keep ToolTrader,
+
+        Result:	Base.Jack,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe TirePump por Dinero
+    {
+        destroy Money=5,
+        keep ToolTrader,
+
+        Result:	Base.TirePump,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe LlaveCruz por Dinero
+    {
+        destroy Money=5,
+        keep ToolTrader,
+
+        Result:	Base.LugWrench,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe LlaveTubos por Dinero
+    {
+        destroy Money=10,
+        keep ToolTrader,
+
+        Result:	Base.PipeWrench,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe BatteryCharger Dinero
+    {
+        destroy Money=10,
+        keep ToolTrader,
+
+        Result:	Base.CarBatteryCharger,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	recipe Propano Dinero
+    {
+        destroy Money=15,
+        keep ToolTrader,
+
+        Result:	Base.PropaneTank,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+		recipe Almadena Dinero
+    {
+        destroy Money=50,
+        keep ToolTrader,
+
+        Result:	Base.Sledgehammer,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+		recipe Palanca Dinero
+    {
+        destroy Money=15,
+        keep ToolTrader,
+
+        Result:	Base.Crowbar,
+        CanBeDoneFromFloor:true,
+        Category:Money,
+        Time:5,
+        OnTest:Change_All_For_Money_OnTest,
+    }
+	
+	
+}
